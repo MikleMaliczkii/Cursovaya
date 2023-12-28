@@ -1,0 +1,83 @@
+\hypertarget{errorhandler_8hpp}{}\doxysection{Файл errorhandler.\+hpp}
+\label{errorhandler_8hpp}\index{errorhandler.hpp@{errorhandler.hpp}}
+
+
+Класс обработки ошибок с записью в журнал  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Граф включаемых заголовочных файлов для errorhandler.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{errorhandler_8hpp__incl}
+\end{center}
+\end{figure}
+Граф файлов, в которые включается этот файл\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=178pt]{errorhandler_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Классы}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlog__err}{log\+\_\+err}}
+\begin{DoxyCompactList}\small\item\em Класс обработки ошибок записи в журнал \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classauth__err}{auth\+\_\+err}}
+\begin{DoxyCompactList}\small\item\em Класс обработки ошибок аутентификации \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classread__err}{read\+\_\+err}}
+\begin{DoxyCompactList}\small\item\em Класс обработки ошибок чтения \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{errorhandler_8hpp_a7b4aa3455116920e9d4495adc8147376}{logger}} (std\+::string lp, std\+::string what)
+\begin{DoxyCompactList}\small\item\em Функция записи ошибок в журнал \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс обработки ошибок с записью в журнал 
+
+\begin{DoxyAuthor}{Автор}
+Малицкий М.\+А. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+21.\+12.\+2023 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Авторство}
+ИБСТ ПГУ 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Функции}
+\mbox{\Hypertarget{errorhandler_8hpp_a7b4aa3455116920e9d4495adc8147376}\label{errorhandler_8hpp_a7b4aa3455116920e9d4495adc8147376}} 
+\index{errorhandler.hpp@{errorhandler.hpp}!logger@{logger}}
+\index{logger@{logger}!errorhandler.hpp@{errorhandler.hpp}}
+\doxysubsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily std\+::string logger (\begin{DoxyParamCaption}\item[{std\+::string}]{lp,  }\item[{std\+::string}]{what }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Функция записи ошибок в журнал 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em lp} & Путь к файлу журнала \\
+\hline
+{\em what} & Содержание ошибки \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+log\+\_\+s Строка с логом ошибки 
+\end{DoxyReturn}
